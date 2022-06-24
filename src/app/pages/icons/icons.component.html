@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card demo-icons">
+            <div class="card-header">
+                <h5 class="card-title"> Entrenamientos</h5>
+                <p class="card-category">Aqui puedes ver los proximos entrenos de esta semana</p>
+            </div>
+            <div class="card-body all-icons">
+                <div id="icons-wrapper">
+                    <div class="col-lg-6 col-md-6 col-sm-6" *ngFor="let entreno of entrenos">
+                        <div class="card card-stats">
+                            <div class="card-body ">
+                                <div class="col-7 col-md-8">
+                                    <div class="numbers">
+                                        <p class="card-title">{{entreno.dia}}
+                                            <p>
+                                                <p class="card-category">{{entreno.musculo}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer ">
+                                <hr>
+                                <div class="stats">
+                                    <i class="fa fa-clock-o"></i> {{entreno.recomendacion}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
